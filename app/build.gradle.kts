@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        dataBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -45,13 +46,6 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
-            excludes += "META-INF/*androidx.localbroadcastmanager_localbroadcastmanager.version"
-            excludes += "META-INF/androidx.appcompat_appcompat.version"
-            excludes += "META-INF/androidx.cursoradapter_cursoradapter.version"
-            excludes += "META-INF/androidx.drawerlayout_drawerlayout.version"
-            excludes += "META-INF/androidx.print_print.version"
-            excludes += "META-INF/androidx.interpolator_interpolator.version"
-            excludes += "META-INF/*"
         }
     }
 }
@@ -68,13 +62,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.appCompat)
     implementation(libs.material)
-    implementation(libs.sales.force.service) {
-        exclude(group = "com.android.support", module = "support-compat")
-        exclude(group = "com.android.support", module = "design")
-    }
-//    implementation(libs.sales.force.chat) {
-
-//    }
+    implementation(libs.messaging.inapp.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

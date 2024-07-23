@@ -17,7 +17,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven {
-            url = uri("https://s3.amazonaws.com/salesforcesos.com/android/maven/release")
+            url = uri("https://s3.amazonaws.com/inapp.salesforce.com/public/android")
         }
     }
 }

@@ -8,10 +8,9 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 composeBom = "2024.04.01"
-salesForceChat = "4.3.6"
+messagingInappUi = "1.6.1"
 appCompat = "1.3.0"
 material = "1.4.0"
-serviceSdk = "224.2.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,8 +27,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-sales-force-service = { group = "com.salesforce.service", name = "servicesdk", version.ref = "serviceSdk" }
-sales-force-chat = { group = "com.salesforce.service", name = "chat-ui", version.ref = "salesForceChat" }
+messaging-inapp-ui = { module = "com.salesforce.service:messaging-inapp-ui", version.ref = "messagingInappUi" }
 appCompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
